@@ -10,11 +10,15 @@
     "typescript-plugin-css-modules": "^3.4.0"
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "react-scripts": "latest"
   },
   "main": "index.tsx",
   "name": "test-table",
+  "homepage": "https://stasyrahlina.github.io/test-table",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
